@@ -1,2 +1,2 @@
 # tiled-js
-javascript tile engine
+javascript tile-based game engine
