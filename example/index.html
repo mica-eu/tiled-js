@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tiled Game Example</title>
+    <meta charset="utf-8">
+    <style>
+      #canvas {
+        float: left;
+        margin-left: 30px;
+        border: 1px solid #ccc;
+        background: #eee;
+      }
+
+      #output {
+        float: left;
+        width: 160px;
+        min-height: 160px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        background: #000;
+        color: #fff;
+      }
+    </style>
+    <script>
+      var mapone = [
+        ['r', 'r', 'r', 'r', 'r', 'r', 'r', 'r'],
+        ['r', 'g', 'g', 'g', 'g', 'g', 'g', 'r'],
+        ['r', 'g', 'g', 'g', 'g', 'g', 'g', 'r'],
+        ['r', 'g', 'g', 'g', 'r', 'g', 'g', 'r'],
+        ['r', 'g', 'g', 'g', 'r', 'g', 'g', 'r'],
+        ['r', 'g', 'g', 'g', 'r', 'r', 'g', 'r'],
+        ['r', 'g', 'g', 'g', 'g', 'g', 'g', 'r'],
+        ['r', 'r', 'r', 'r', 'r', 'r', 'r', 'r']
+      ];
+
+      window.onload = function() {
+        engine.start(mapone, 0, 0);
+      };
+    </script>
+  </head>
+  <body>
+    <code id="output"></code>
+    <canvas id="canvas" width="160" height="160"></canvas>
+    <script src="../engine/engine.js"></script>
+  </body>
+</html>
