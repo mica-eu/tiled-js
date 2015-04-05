@@ -22,15 +22,19 @@
       }
     </style>
     <script>
+      var r = {ground: 1, item: 2}; // pedra
+      var g = {ground: 1}; // grama
+      var u = {ground: 0}; // preto
+
       var mapone = [
-        ['r', 'r', 'r', 'r', 'r', 'r', 'r', 'r'],
-        ['r', 'g', 'g', 'g', 'g', 'g', 'g', 'r'],
-        ['r', 'g', 'g', 'g', 'g', 'g', 'g', 'r'],
-        ['r', 'g', 'g', 'g', 'r', 'g', 'g', 'r'],
-        ['r', 'g', 'g', 'g', 'r', 'g', 'g', 'r'],
-        ['r', 'g', 'g', 'g', 'r', 'r', 'g', 'r'],
-        ['r', 'g', 'g', 'g', 'g', 'g', 'g', 'r'],
-        ['r', 'r', 'r', 'r', 'r', 'r', 'r', 'r']
+        [r, r, r, r, r, r, r, r],
+        [r, g, g, g, g, g, g, r],
+        [r, g, g, g, g, g, g, r],
+        [r, g, g, g, r, g, g, r],
+        [r, g, g, g, r, g, g, r],
+        [r, g, g, g, r, r, g, r],
+        [r, g, g, g, g, g, g, r],
+        [r, r, r, r, r, r, r, r]
       ];
 
       window.onload = function() {
